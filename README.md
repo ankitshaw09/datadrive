@@ -38,10 +38,9 @@ This project is a full-stack web application for cloud storage, built using Djan
 
 **Backend (Django):**
 
-- **Django:** A high-level Python web framework.
+- **Django:** A high-level Python web framework. 
 - **Django REST Framework:** A powerful and flexible toolkit for building Web APIs.
 - **Django Simple JWT:** For handling JSON Web Token (JWT) based authentication.
-- **(Potentially) Pillow:** For image processing (if implemented for thumbnails, etc.).
 - **(Potentially) Database:** SQLite (for development), PostgreSQL, MySQL, etc.
 
 **Frontend (React):**
@@ -49,7 +48,6 @@ This project is a full-stack web application for cloud storage, built using Djan
 - **React:** A JavaScript library for building user interfaces.
 - **React Router:** For handling client-side routing.
 - **Axios:** For making HTTP requests to the backend API.
-- **(Potentially) Redux or Context API:** For state management.
 - **(Potentially) Styled Components or CSS Modules:** For styling.
 - **React Icons:** For using icons in the UI.
 
@@ -59,36 +57,19 @@ Follow these steps to set up the project on your local machine.
 
 ### Backend (Django)
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository_url>
-    cd <backend_directory>
-    ```
 
-2.  **Create a virtual environment:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On macOS/Linux
-    venv\Scripts\activate  # On Windows
-    ```
-
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Make migrations:**
+1.  **Make migrations:**
     ```bash
     python manage.py makemigrations
     python manage.py migrate
     ```
 
-5.  **Create a superuser (for admin access):**
+2.  **Create a superuser (for admin access):**
     ```bash
     python manage.py createsuperuser
     ```
 
-6.  **Run the development server:**
+3.  **Run the development server:**
     ```bash
     python manage.py runserver
     ```
